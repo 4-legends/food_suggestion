@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "cd RecipeFinder && npm run build"
   publish = "web-build"
   environment = { NODE_VERSION = "18" }
 
