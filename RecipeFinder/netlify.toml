@@ -1,8 +1,14 @@
 [build]
-  command = "expo export:web"
+  command = "npm run build"
   publish = "web-build"
+  environment = { NODE_VERSION = "18" }
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200 
+  status = 200
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate" 

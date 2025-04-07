@@ -43,3 +43,12 @@ yarn-error.*
 # IDE
 .idea/
 .vscode/
+
+# Netlify
+.netlify/
+.next/
+out/
+build/
+
+# Local Netlify folder
+.netlify
