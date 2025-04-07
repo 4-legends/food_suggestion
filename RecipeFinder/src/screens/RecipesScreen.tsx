@@ -106,6 +106,114 @@ const RecipesScreen = () => {
       difficulty: "Medium",
       dietaryInfo: ["Vegetarian", "Vegan"],
     },
+    {
+      id: "7",
+      name: "Pad Thai",
+      cuisine: "Thai",
+      prepTime: "20 mins",
+      cookTime: "15 mins",
+      difficulty: "Medium",
+      dietaryInfo: ["Gluten-Free"],
+    },
+    {
+      id: "8",
+      name: "Butter Chicken",
+      cuisine: "Indian",
+      prepTime: "25 mins",
+      cookTime: "35 mins",
+      difficulty: "Medium",
+      dietaryInfo: [],
+    },
+    {
+      id: "9",
+      name: "Falafel Wrap",
+      cuisine: "Middle Eastern",
+      prepTime: "30 mins",
+      cookTime: "15 mins",
+      difficulty: "Medium",
+      dietaryInfo: ["Vegetarian", "Vegan"],
+    },
+    {
+      id: "10",
+      name: "Sushi Rolls",
+      cuisine: "Japanese",
+      prepTime: "40 mins",
+      cookTime: "10 mins",
+      difficulty: "Hard",
+      dietaryInfo: ["Gluten-Free"],
+    },
+    {
+      id: "11",
+      name: "Greek Moussaka",
+      cuisine: "Mediterranean",
+      prepTime: "30 mins",
+      cookTime: "45 mins",
+      difficulty: "Hard",
+      dietaryInfo: [],
+    },
+    {
+      id: "12",
+      name: "Vietnamese Pho",
+      cuisine: "Vietnamese",
+      prepTime: "30 mins",
+      cookTime: "3 hours",
+      difficulty: "Hard",
+      dietaryInfo: ["Gluten-Free"],
+    },
+    {
+      id: "13",
+      name: "French Ratatouille",
+      cuisine: "French",
+      prepTime: "25 mins",
+      cookTime: "40 mins",
+      difficulty: "Medium",
+      dietaryInfo: ["Vegetarian", "Vegan", "Gluten-Free"],
+    },
+    {
+      id: "14",
+      name: "Spanish Paella",
+      cuisine: "Spanish",
+      prepTime: "30 mins",
+      cookTime: "40 mins",
+      difficulty: "Hard",
+      dietaryInfo: [],
+    },
+    {
+      id: "15",
+      name: "Turkish Kebabs",
+      cuisine: "Middle Eastern",
+      prepTime: "25 mins",
+      cookTime: "15 mins",
+      difficulty: "Medium",
+      dietaryInfo: ["Gluten-Free"],
+    },
+    {
+      id: "16",
+      name: "Quinoa Bowl",
+      cuisine: "American",
+      prepTime: "15 mins",
+      cookTime: "20 mins",
+      difficulty: "Easy",
+      dietaryInfo: ["Vegetarian", "Vegan", "Gluten-Free"],
+    },
+    {
+      id: "17",
+      name: "Brazilian Feijoada",
+      cuisine: "Brazilian",
+      prepTime: "30 mins",
+      cookTime: "2 hours",
+      difficulty: "Hard",
+      dietaryInfo: [],
+    },
+    {
+      id: "18",
+      name: "Moroccan Tagine",
+      cuisine: "Moroccan",
+      prepTime: "25 mins",
+      cookTime: "1 hour",
+      difficulty: "Medium",
+      dietaryInfo: ["Gluten-Free"],
+    },
   ];
 
   // Filter recipes based on the selected parameters and search query
@@ -288,27 +396,40 @@ const RecipesScreen = () => {
                   showsHorizontalScrollIndicator={false}
                   contentContainerStyle={styles.tagScrollContainer}
                 >
-                  {["Italian", "Mexican", "Asian", "Mediterranean"].map(
-                    (tag) => (
-                      <Pressable
-                        key={tag}
+                  {[
+                    "Italian",
+                    "Mexican",
+                    "Asian",
+                    "Mediterranean",
+                    "Indian",
+                    "Middle Eastern",
+                    "Japanese",
+                    "Thai",
+                    "Vietnamese",
+                    "French",
+                    "Spanish",
+                    "American",
+                    "Brazilian",
+                    "Moroccan",
+                  ].map((tag) => (
+                    <Pressable
+                      key={tag}
+                      style={[
+                        styles.tagItem,
+                        selectedTags[tag] && styles.selectedTagItem,
+                      ]}
+                      onPress={() => toggleTag(tag)}
+                    >
+                      <Text
                         style={[
-                          styles.tagItem,
-                          selectedTags[tag] && styles.selectedTagItem,
+                          styles.tagText,
+                          selectedTags[tag] && styles.selectedTagText,
                         ]}
-                        onPress={() => toggleTag(tag)}
                       >
-                        <Text
-                          style={[
-                            styles.tagText,
-                            selectedTags[tag] && styles.selectedTagText,
-                          ]}
-                        >
-                          {tag}
-                        </Text>
-                      </Pressable>
-                    )
-                  )}
+                        {tag}
+                      </Text>
+                    </Pressable>
+                  ))}
                 </ScrollView>
               </View>
 
@@ -459,27 +580,40 @@ const RecipesScreen = () => {
                   showsHorizontalScrollIndicator={false}
                   contentContainerStyle={styles.tagScrollContainer}
                 >
-                  {["Italian", "Mexican", "Asian", "Mediterranean"].map(
-                    (tag) => (
-                      <Pressable
-                        key={tag}
+                  {[
+                    "Italian",
+                    "Mexican",
+                    "Asian",
+                    "Mediterranean",
+                    "Indian",
+                    "Middle Eastern",
+                    "Japanese",
+                    "Thai",
+                    "Vietnamese",
+                    "French",
+                    "Spanish",
+                    "American",
+                    "Brazilian",
+                    "Moroccan",
+                  ].map((tag) => (
+                    <Pressable
+                      key={tag}
+                      style={[
+                        styles.tagItem,
+                        selectedTags[tag] && styles.selectedTagItem,
+                      ]}
+                      onPress={() => toggleTag(tag)}
+                    >
+                      <Text
                         style={[
-                          styles.tagItem,
-                          selectedTags[tag] && styles.selectedTagItem,
+                          styles.tagText,
+                          selectedTags[tag] && styles.selectedTagText,
                         ]}
-                        onPress={() => toggleTag(tag)}
                       >
-                        <Text
-                          style={[
-                            styles.tagText,
-                            selectedTags[tag] && styles.selectedTagText,
-                          ]}
-                        >
-                          {tag}
-                        </Text>
-                      </Pressable>
-                    )
-                  )}
+                        {tag}
+                      </Text>
+                    </Pressable>
+                  ))}
                 </ScrollView>
               </View>
 

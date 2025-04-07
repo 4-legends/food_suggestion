@@ -33,7 +33,7 @@ interface Nutrition {
   fiber: number;
 }
 
-// Add recipe 3 to the mock data
+// Add more recipe details for the new recipes
 const recipesData = {
   "1": {
     id: "1",
@@ -56,28 +56,25 @@ const recipesData = {
     description:
       "A classic Italian pasta dish made with eggs, cheese, pancetta, and black pepper. This creamy dish comes together quickly and is always a crowd pleaser.",
     ingredients: [
-      "350g spaghetti",
-      "150g pancetta",
+      "200g spaghetti",
+      "100g pancetta",
       "2 large eggs",
-      "50g pecorino cheese",
-      "50g parmesan",
+      "50g Pecorino Romano, grated",
+      "50g Parmesan, grated",
       "Freshly ground black pepper",
-      "1 garlic clove (optional)",
+      "Sea salt",
     ],
     instructions: [
-      "Bring a large pot of salted water to boil and cook spaghetti according to package instructions.",
-      "While pasta cooks, heat a large skillet over medium heat. Add pancetta and cook until crispy, about 8-10 minutes.",
-      "In a bowl, whisk together eggs, grated cheeses, and plenty of black pepper.",
-      "Drain pasta, reserving 1/2 cup of pasta water.",
-      "Working quickly, add hot pasta to the skillet with pancetta. Toss to combine.",
-      "Remove from heat and pour egg mixture over pasta, tossing constantly to create a creamy sauce. Add pasta water as needed for consistency.",
-      "Serve immediately with additional cheese and black pepper.",
+      "Cook the spaghetti in a large pot of boiling salted water until al dente.",
+      "Meanwhile, fry the pancetta in a large pan until crispy.",
+      "In a bowl, whisk together the eggs, grated cheeses, and black pepper.",
+      "Drain the pasta, reserving a little of the cooking water.",
+      "Working quickly, add the hot pasta to the pancetta, then remove from heat.",
+      "Add the egg and cheese mixture, tossing quickly to ensure the eggs don't scramble.",
+      "Add a splash of cooking water to create a silky sauce.",
+      "Season with salt and more pepper if needed, and serve immediately.",
     ],
-    tips: [
-      "Don't let the eggs scramble! Remove the pan from heat before adding them.",
-      "For authentic carbonara, use guanciale instead of pancetta if available.",
-      "Freshly grated cheese makes a huge difference in flavor.",
-    ],
+    tips: "The heat from the pasta cooks the egg mixture gently, creating a creamy sauce without scrambling the eggs. Work quickly once you add the egg mixture to achieve the best texture.",
   },
   "2": {
     id: "2",
@@ -89,7 +86,7 @@ const recipesData = {
     servings: 4,
     calories: 320,
     image:
-      "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80",
+      "https://images.unsplash.com/photo-1565299585323-3366772f4999?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80",
     nutrition: {
       calories: 320,
       protein: 9,
@@ -218,6 +215,261 @@ const recipesData = {
       "Try adding a squeeze of lemon juice for extra brightness.",
     ],
   },
+  "7": {
+    id: "7",
+    name: "Pad Thai",
+    cuisine: "Thai",
+    prepTime: "30 mins",
+    cookTime: "20 mins",
+    difficulty: "Medium",
+    servings: 4,
+    calories: 500,
+    image:
+      "https://images.unsplash.com/photo-1598505754570-4f094c5a555e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    nutrition: {
+      calories: 500,
+      protein: 15,
+      carbs: 50,
+      fat: 20,
+      fiber: 3,
+    },
+    description:
+      "A flavorful Thai noodle dish made with rice noodles, tofu, and a flavorful sauce. Perfect for a quick weeknight dinner.",
+    ingredients: [
+      "250g rice noodles",
+      "2 tbsp vegetable oil",
+      "2 cloves garlic, minced",
+      "150g tofu or chicken, diced",
+      "2 eggs, beaten",
+      "100g bean sprouts",
+      "4 green onions, chopped",
+      "50g roasted peanuts, crushed",
+      "Lime wedges",
+      "For the sauce:",
+      "3 tbsp fish sauce (or soy sauce for vegetarian)",
+      "3 tbsp brown sugar",
+      "2 tbsp tamarind paste",
+      "1 tbsp lime juice",
+      "1 tsp chili flakes (optional)",
+    ],
+    instructions: [
+      "Soak rice noodles in hot water for 10 minutes until soft but firm, then drain.",
+      "Mix all sauce ingredients in a small bowl until sugar dissolves.",
+      "Heat oil in a wok or large frying pan over medium-high heat.",
+      "Add garlic and stir-fry for 30 seconds, then add tofu/chicken and cook until done.",
+      "Push ingredients to one side, add beaten eggs to the empty space and scramble.",
+      "Add drained noodles and sauce, tossing to coat everything evenly.",
+      "Cook for 2-3 minutes until noodles absorb the sauce.",
+      "Add bean sprouts and half the green onions, toss briefly.",
+      "Serve topped with remaining green onions, crushed peanuts, and lime wedges.",
+    ],
+    tips: "For authentic Pad Thai, tamarind paste is essential. If you can't find it, mix lime juice with a little brown sugar as a substitute.",
+  },
+  "8": {
+    id: "8",
+    name: "Butter Chicken",
+    cuisine: "Indian",
+    prepTime: "2 hours",
+    cookTime: "1 hour",
+    difficulty: "Medium",
+    servings: 4,
+    calories: 800,
+    image:
+      "https://images.unsplash.com/photo-1574917010566-a1d02e26b8e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    nutrition: {
+      calories: 800,
+      protein: 40,
+      carbs: 50,
+      fat: 40,
+      fiber: 5,
+    },
+    description:
+      "A flavorful Indian chicken dish made with marinated chicken cooked in a creamy tomato sauce. Perfect for a special weeknight dinner.",
+    ingredients: [
+      "800g boneless chicken thighs, cut into chunks",
+      "For the marinade:",
+      "1 cup yogurt",
+      "1 tbsp lemon juice",
+      "2 tsp turmeric powder",
+      "2 tsp garam masala",
+      "2 tsp ground cumin",
+      "2 tsp red chili powder",
+      "For the sauce:",
+      "2 tbsp vegetable oil",
+      "2 tbsp butter",
+      "1 large onion, finely chopped",
+      "3 cloves garlic, minced",
+      "1 tbsp ginger, grated",
+      "1 can (400g) tomato puree",
+      "1 cup heavy cream",
+      "1 tbsp sugar",
+      "Salt to taste",
+      "Fresh coriander for garnish",
+    ],
+    instructions: [
+      "Mix all marinade ingredients in a bowl. Add chicken and marinate for at least 2 hours, preferably overnight.",
+      "Preheat oven to 425°F (220°C). Place marinated chicken on a baking tray and cook for 15 minutes.",
+      "Meanwhile, heat oil and butter in a large pan over medium heat.",
+      "Add onions and sauté until golden brown, about 5 minutes.",
+      "Add garlic and ginger, cook for 1-2 minutes until fragrant.",
+      "Add tomato puree, sugar, and salt. Simmer for 10-15 minutes until sauce thickens.",
+      "Add cooked chicken pieces to the sauce and simmer for 5 minutes.",
+      "Stir in cream and simmer for another 5 minutes on low heat.",
+      "Garnish with fresh coriander and serve with naan bread or rice.",
+    ],
+    tips: "The longer you marinate the chicken, the more flavorful it will be. For a richer sauce, add an extra tablespoon of butter just before serving.",
+  },
+  "9": {
+    id: "9",
+    name: "Falafel Wrap",
+    cuisine: "Middle Eastern",
+    prepTime: "30 mins",
+    cookTime: "20 mins",
+    difficulty: "Medium",
+    servings: 4,
+    calories: 300,
+    image:
+      "https://images.unsplash.com/photo-1543566096-a0e3f5f4b7f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    nutrition: {
+      calories: 300,
+      protein: 10,
+      carbs: 30,
+      fat: 15,
+      fiber: 5,
+    },
+    description:
+      "A flavorful Middle Eastern wrap made with falafels, hummus, and a variety of fresh vegetables. Perfect for a quick weeknight dinner.",
+    ingredients: [
+      "For the falafel:",
+      "2 cans (400g each) chickpeas, drained and rinsed",
+      "1 small onion, roughly chopped",
+      "3 cloves garlic",
+      "1/4 cup fresh parsley",
+      "1/4 cup fresh cilantro",
+      "1 tbsp cumin",
+      "1 tsp coriander",
+      "1/2 tsp cayenne pepper",
+      "2 tbsp flour",
+      "1 tsp baking powder",
+      "Salt and pepper to taste",
+      "Oil for frying",
+      "For the wrap:",
+      "4 large flatbreads or tortillas",
+      "Hummus",
+      "Lettuce or mixed greens",
+      "Tomatoes, sliced",
+      "Cucumber, sliced",
+      "Red onion, thinly sliced",
+      "Tzatziki sauce",
+    ],
+    instructions: [
+      "In a food processor, combine chickpeas, onion, garlic, herbs, and spices. Pulse until mixture is coarse but not pureed.",
+      "Transfer to a bowl, add flour and baking powder, season with salt and pepper, and mix well.",
+      "Form mixture into small balls (about 2 tablespoons each) and slightly flatten.",
+      "Heat oil in a deep pan to 350°F (175°C).",
+      "Fry falafels in batches for 3-4 minutes until golden brown and crispy. Drain on paper towels.",
+      "Warm flatbreads according to package instructions.",
+      "Spread hummus on each flatbread, add lettuce, tomatoes, cucumber, and red onion.",
+      "Place 3-4 falafels on each wrap, drizzle with tzatziki sauce.",
+      "Fold the sides and bottom of the flatbread, then roll tightly to form a wrap.",
+    ],
+    tips: "For the best texture, use dried chickpeas soaked overnight instead of canned. If you're short on time, canned chickpeas work well too. Make sure to dry them thoroughly to prevent the falafels from falling apart during frying.",
+  },
+  "12": {
+    id: "12",
+    name: "Vietnamese Pho",
+    cuisine: "Vietnamese",
+    prepTime: "4 hours",
+    cookTime: "1 hour",
+    difficulty: "Medium",
+    servings: 4,
+    calories: 1000,
+    image:
+      "https://images.unsplash.com/photo-1584725012380-75a6978e24b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    nutrition: {
+      calories: 1000,
+      protein: 40,
+      carbs: 100,
+      fat: 30,
+      fiber: 5,
+    },
+    description:
+      "A flavorful Vietnamese noodle soup made with a flavorful broth, thinly sliced beef, and a variety of fresh vegetables. Perfect for a special weeknight dinner.",
+    ingredients: [
+      "For the broth:",
+      "2 kg beef bones (marrow and knuckle bones)",
+      "1 whole onion, unpeeled and halved",
+      "10 cm piece of ginger, unpeeled and halved",
+      "5 star anise pods",
+      "6 cloves",
+      "1 cinnamon stick",
+      "1 tbsp coriander seeds",
+      "2 tbsp fish sauce",
+      "1 tbsp sugar",
+      "Salt to taste",
+      "For serving:",
+      "400g flat rice noodles",
+      "300g beef sirloin, thinly sliced",
+      "1 onion, thinly sliced",
+      "4 green onions, chopped",
+      "200g bean sprouts",
+      "1 bunch Thai basil",
+      "1 bunch cilantro",
+      "1 lime, cut into wedges",
+      "2 red chili peppers, sliced",
+      "Hoisin sauce and sriracha for serving",
+    ],
+    instructions: [
+      "Preheat oven to 425°F (220°C). Place beef bones on a baking sheet and roast for 45 minutes.",
+      "Meanwhile, char the halved onion and ginger over an open flame or under the broiler until blackened.",
+      "Transfer roasted bones to a large stockpot and cover with 5 liters of cold water.",
+      "Add charred onion, ginger, star anise, cloves, cinnamon stick, and coriander seeds.",
+      "Bring to a boil, then reduce heat to low and simmer for 3 hours, skimming off foam periodically.",
+      "Add fish sauce, sugar, and salt to taste.",
+      "Strain broth through a fine-mesh sieve and return to pot. Keep hot.",
+      "Cook rice noodles according to package directions, then drain and rinse.",
+      "Divide noodles among bowls, top with raw beef slices (the hot broth will cook them).",
+      "Pour hot broth over the beef and noodles.",
+      "Serve with onions, green onions, bean sprouts, herbs, lime wedges, and chili peppers on the side.",
+    ],
+    tips: "For the clearest, most flavorful broth, blanch the bones first by covering with cold water, bringing to a boil for 5 minutes, then draining and rinsing before roasting. This removes impurities that can cloud the broth.",
+  },
+};
+
+// Update the getCuisineColor function to handle new cuisines
+const getCuisineColor = (cuisine: string) => {
+  switch (cuisine) {
+    case "Italian":
+      return "#F2D7D9";
+    case "Mexican":
+      return "#D3CEDF";
+    case "Asian":
+      return "#9CB4CC";
+    case "Mediterranean":
+      return "#748DA6";
+    case "Indian":
+      return "#E7B10A";
+    case "Middle Eastern":
+      return "#898121";
+    case "Japanese":
+      return "#F9F5EB";
+    case "Thai":
+      return "#7AA874";
+    case "Vietnamese":
+      return "#96B6C5";
+    case "French":
+      return "#A0D8B3";
+    case "Spanish":
+      return "#D71313";
+    case "American":
+      return "#1F6E8C";
+    case "Brazilian":
+      return "#FFBB5C";
+    case "Moroccan":
+      return "#A84448";
+    default:
+      return "#f5f5f5";
+  }
 };
 
 const RecipeDetailScreen = () => {
@@ -291,17 +543,19 @@ const RecipeDetailScreen = () => {
             ))}
           </View>
 
-          {recipe.tips && (
-            <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Chef's Tips</Text>
-              {recipe.tips.map((tip, index) => (
-                <View key={index} style={styles.tipItem}>
-                  <Text style={styles.tipIcon}>💡</Text>
-                  <Text style={styles.tipText}>{tip}</Text>
-                </View>
-              ))}
-            </View>
-          )}
+          {recipe.tips &&
+            Array.isArray(recipe.tips) &&
+            recipe.tips.length > 0 && (
+              <View style={styles.section}>
+                <Text style={styles.sectionTitle}>Chef's Tips</Text>
+                {recipe.tips.map((tip, index) => (
+                  <View key={index} style={styles.tipItem}>
+                    <Text style={styles.tipIcon}>💡</Text>
+                    <Text style={styles.tipText}>{tip}</Text>
+                  </View>
+                ))}
+              </View>
+            )}
         </Animated.View>
       );
     } else {
